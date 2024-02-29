@@ -1,1 +1,35 @@
 <p>tercer-dia works!</p>
+
+<h1>{{exampleService.var_service}}</h1>
+<input
+    type="text"
+    [(ngModel)]="name"
+    class="form-control"
+    
+>
+
+<button
+    class="btn btn-primary"
+    (click)="exampleService.onclickbutton(name)"
+>
+    Click al servicio
+</button>
+<div style="height: 500px;overflow: auto;">
+<table class="table">   
+    <thead>
+        <div></div>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Descripcion</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let itemuser of users;let i = index;">
+        <th>{{i + 1}}</th>
+        <th>{{editartexto(itemuser.title)}}</th>
+        <td>{{itemuser.body | uppercase}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
