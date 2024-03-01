@@ -16,4 +16,4 @@ export class ExampleService {
     console.log(text);
     this.var_service= text;
   }
-}
+} 

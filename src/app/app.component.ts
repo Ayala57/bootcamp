@@ -3,12 +3,13 @@ import { RouterModule, RouterOutlet } from '@angular/router';
 import { PrimerDiaComponentprincipal } from './primer-dia/primer-dia.component';
 import { SegundoDiaComponent } from './segundo-dia/segundo-dia.component';
 import { TercerDiaComponent } from './tercer-dia/tercer-dia.component';
+import { ProyectoFinalComponent } from './proyecto-final/proyecto-final.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, PrimerDiaComponentprincipal,SegundoDiaComponent,TercerDiaComponent,RouterModule],
+  imports: [RouterOutlet, PrimerDiaComponentprincipal,SegundoDiaComponent,TercerDiaComponent,ProyectoFinalComponent,RouterModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
